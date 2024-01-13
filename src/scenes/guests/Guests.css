@@ -1,0 +1,24 @@
+/* Guests.css */
+
+.card {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .border-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    background-image: linear-gradient(to right, #f6ad55, #fc8181);
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover .border-overlay {
+    transform: translate(-10px, -10px);
+  }
+  
